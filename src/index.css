@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * COLOR AUDIT
+ * primaryColor: #C2410C
+ * brightness: (194*299 + 65*587 + 12*114) / 1000 = 97.5 -> DARK
+ * filled button text: #ffffff
+ * outline text: #7E2A07 (darkened 65%)
+ * WCAG AA: pass
+ */
+
+:root {
+  --background: 30 20% 98%;
+  --foreground: 20 14% 9%;
+  --card: 0 0% 100%;
+  --card-foreground: 20 14% 9%;
+  --popover: 0 0% 100%;
+  --popover-foreground: 20 14% 9%;
+  --primary: 17 89% 41%;
+  --primary-foreground: 0 0% 100%;
+  --secondary: 30 10% 94%;
+  --secondary-foreground: 20 14% 9%;
+  --muted: 30 10% 94%;
+  --muted-foreground: 20 6% 45%;
+  --accent: 30 10% 94%;
+  --accent-foreground: 20 14% 9%;
+  --destructive: 0 84% 60%;
+  --destructive-foreground: 0 0% 100%;
+  --border: 30 10% 88%;
+  --input: 30 10% 88%;
+  --ring: 17 89% 41%;
+  --radius: 0.5rem;
+}
+
+.dark {
+  --background: 20 14% 4%;
+  --foreground: 30 10% 96%;
+  --card: 20 14% 6%;
+  --card-foreground: 30 10% 96%;
+  --popover: 20 14% 6%;
+  --popover-foreground: 30 10% 96%;
+  --primary: 17 89% 55%;
+  --primary-foreground: 0 0% 9%;
+  --secondary: 20 14% 15%;
+  --secondary-foreground: 30 10% 96%;
+  --muted: 20 14% 15%;
+  --muted-foreground: 30 6% 64%;
+  --accent: 20 14% 15%;
+  --accent-foreground: 30 10% 96%;
+  --destructive: 0 62% 30%;
+  --destructive-foreground: 30 10% 96%;
+  --border: 20 14% 15%;
+  --input: 20 14% 15%;
+  --ring: 17 89% 55%;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-family: 'Geist', system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+html {
+  scroll-behavior: smooth;
+}
