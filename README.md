@@ -33,4 +33,4 @@ GitHub: https://github.com/silamutungi/chefnear-fafd83
 Vercel: https://vercel.com/dashboard
 Supabase: https://supabase.com/dashboard
 
-Sovereign provisioned this. You own it entirely.
+Visila provisioned this. You own it entirely.
