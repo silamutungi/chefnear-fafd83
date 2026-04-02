@@ -41,7 +41,7 @@ Design tokens: bg-paper (#f2efe8), bg-ink (#0e0d0b), font-serif (Playfair Displa
 - GitHub: https://github.com/silamutungi/chefnear-fafd83
 - Vercel: https://vercel.com/dashboard
 - Supabase: https://supabase.com/dashboard
-- Built: 2026-04-01
+- Built: 2026-04-02
 
 ## Hard-Won Lessons
 
