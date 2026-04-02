@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import { useState, type FormEvent } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { Star, MapPin, Clock, Users, ChefHat, ArrowLeft } from 'lucide-react'
+import { Star, MapPin, Clock, ChefHat, ArrowLeft } from 'lucide-react'
 import { Button } from '../components/ui/button'
 import { Input } from '../components/ui/input'
 import { Label } from '../components/ui/label'
@@ -55,8 +55,9 @@ export default function ChefProfile() {
   const guestCount = parseInt(guests) || 0
   const total = guestCount * chef.price_per_person
 
-  function handleBook(e: React.FormEvent) {
+  function handleBook(e: FormEvent) {
     e.preventDefault()
+    if (!chef) return
     setBookingError('')
     if (!date) { setBookingError('Please select an event date.'); return }
     if (guestCount < chef.min_guests || guestCount > chef.max_guests) {
